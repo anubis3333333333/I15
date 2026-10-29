@@ -2,6 +2,8 @@ class Person{
     private string name;
     private int age;
     private string email;
+    private static int nextId = 1;
+    public int Id {get; private set;}
 
     public string Name {
         get {
@@ -43,6 +45,8 @@ class Person{
     }
 
     public Person(string name, int age, string email){
+        Id = nextId;
+        nextId++;
         Name = name;
         Age = age;
         Email = email;
