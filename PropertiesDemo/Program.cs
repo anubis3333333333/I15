@@ -5,8 +5,8 @@ p.PrintInfo();
 Console.WriteLine();
 Console.WriteLine("меняем данные");
 
-p.SetAge(22);
-p.SetName("Дугин");
-p.SetEmail("alex@mail.ru");
+p.Age = 22;
+p.Name = "Дугин";
+p.Email = "alex@mail.ru";
 
 p.PrintInfo();
